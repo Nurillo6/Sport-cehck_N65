@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
     <link rel="stylesheet" href="./css/main.css">
-    <title>Site Name</title>
+    <title>Sport Check</title>
 </head>
 <body>
-    <!-- Site Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content"></div>
-        </div>
-    </header>
-    <!-- Site Main -->
-    <main class="site-main">
-        <section class="hero-section">
-            <div class="container"></div>
-        </section>
-    </main>
-    <!-- Site Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content"></div>
-        </div>
-    </footer>
+
+    <form action="https://echo.htmlacademy.ru" method="post" class="check-form">
+        <h1>Sport check</h1>
+        <label class="check-label">
+            <input name="Football" class="visually-hidden check-input" type="checkbox" >
+            <div class="check-circle"></div>
+            <span>Football</span>
+        </label>
+        <label class="check-label">
+            <input name="Basket" class="visually-hidden check-input" type="checkbox" >
+            <div class="check-circle check-circle2"></div>
+            <span>Basket</span>
+        </label>
+        <label class="check-label">
+            <input name="Volleybol" class="visually-hidden check-input" type="checkbox" >
+            <div class="check-circle check-circle3"></div>
+            <span>Volleybol</span>
+        </label>
+        <label class="check-label">
+            <input checked disabled name="Hookey" class="visually-hidden check-input" type="checkbox" >
+            <div class="check-circle check-circle4"></div>
+            <span>Hokkey</span>
+        </label>
+        <button>Submit</button>
+    </form>
+
 </body>
 </html>
